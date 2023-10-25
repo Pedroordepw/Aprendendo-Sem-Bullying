@@ -1,19 +1,19 @@
 .footer {
   background-color: #e0f2f1;
-  /* margin-top: 100px; */
-  width: 100%;
-  height: 25vh;
+  width: 100vw;
+  height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-top: 3vh;
 }
 
 .footer ul {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   list-style-type: none;
   padding: 4%;
@@ -23,6 +23,9 @@
   color: #004d40;
   padding-right: 1rem;
   margin-right: 1%;
+  display: flex;
+  justify-content: center;
+  margin: 0 5px;
 }
 
 .footer ul li a {
@@ -39,5 +42,115 @@
 }
 
 .footer img {
-    width: 200px;
+  width: 200px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.footer-text h3 {
+  color: #004d40;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-text p {
+  color: #004d40;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: auto;
+    padding: 2vh 0;
+    justify-content: center; /* Centraliza os itens verticalmente */
+  }
+
+  .footer div {
+    margin-bottom: 2vh;
+  }
+
+  .footer img {
+    max-width: 100%;
+  }
+
+  .footer ul:first-child li {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+  }
+
+  .footer ul:last-child li {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  .footer {
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .footer ul:first-child {
+    width: 50%;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+  }
+
+  .footer ul:last-child {
+    width: 50%;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+  }
+
+  .footer ul:first-child li {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+  }
+
+  .footer ul:last-child li {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .footer {
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .footer ul:first-child {
+    width: 50%;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+  }
+
+  .footer ul:last-child {
+    width: 50%;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+  }
+
+  .footer ul:first-child li {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+  }
+
+  .footer ul:last-child li {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+  }
 }
