@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <div>
       <title>Aprendendo Sem Bullying</title>
+      <link rel="icon" href="/bullying-icon.png" />
       <Header />
       <Conteudo />
       <Footer />
