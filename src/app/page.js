@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
 export default function Home() {
   return (
     <div>
+      <title>Aprendendo Sem Bullying</title>
       <Header />
       <Conteudo />
       <Footer />
